@@ -14,8 +14,14 @@ p.bg-color1{
     
 }
 p{
-    font-size:10px; width: 1028px;
+    position:fixed;
+    top:100px;
 }
 
-/* padding内側、margin外側の余白指定　borderはボックスの境界の色 */
-/* pxは文字の大きさ幅を指定、％はボックスの要素の大きさ */
+p{
+    float:right;
+    top:100px;
+}
+
+/* fixedはその場所から動かない */
+/* floatは横に並べれる */
