@@ -6,11 +6,13 @@
 
 .bg-color1{
     background: #f6f5f5;
+    
 }
 
 p.bg-color1{
     color:red;
 }
+
 
 
 /* ＃はid属性で使える */
