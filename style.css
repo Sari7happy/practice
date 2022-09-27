@@ -11,10 +11,11 @@
 
 p.bg-color1{
     color:red;
+    
+}
+p{
+    font-size:10px; width: 1028px;
 }
 
-
-
-/* ＃はid属性で使える */
-/* .ドットはclass属性に使える */
-/* p.bg-colorで指定して色付けれる */
+/* padding内側、margin外側の余白指定　borderはボックスの境界の色 */
+/* pxは文字の大きさ幅を指定、％はボックスの要素の大きさ */
