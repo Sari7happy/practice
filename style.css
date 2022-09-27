@@ -112,3 +112,42 @@ section h1.title{
     color: #333;
     text-align: center;
 }
+
+/* テーブル */
+table{
+    background: rgb(246,246,246);
+    border: 1px solid #eee;
+    width: 100%;
+    border-radius: 3px;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    font-size: 14px;
+}
+th,td{
+    padding: 5px 0;
+    border-bottom: 1px dotted #ccc;
+
+}
+
+table thead tr th{
+    color:#333;
+    padding-bottom: 15px;
+}
+
+table thead tr th.color1 {
+    color:rgb(230,140,31);
+    font-size: 18px;
+
+
+}
+
+table tbody th{
+    color:rgb(142,130,113);
+}
+
+#merit{
+    overflow: hidden;
+}
