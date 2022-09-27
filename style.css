@@ -32,9 +32,13 @@ header h1{
     -webkit-border-radius:100px;
     -moz-border-radius:100px;
     line-height: 150px;
+
 }
+/* line-heightは行間 */
 
 header h1 a{
     color:#333;
     text-decoration: none;
 }
+
+/* text-decorationはリンクの線を消す */
