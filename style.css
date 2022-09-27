@@ -153,3 +153,19 @@ table tbody th{
 }
 
 /* flaot を解除してくれる機能 */
+
+
+/* フッター */
+
+footer{
+    font-size:12px;
+    margin-top: 30px;
+    padding: 15px;
+    background: #333;
+    text-align: center;
+    color: #f6f5f5;
+} 
+footer a{
+    color: #f6f5f5;
+    
+}
