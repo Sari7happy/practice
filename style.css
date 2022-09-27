@@ -1,6 +1,18 @@
-p{
-    color:blue;
-    font-size: 20px;
-
+#title{
+    background: #333;
+    padding: 15px;
+    color: white;
 }
-/* colorは色、font-sizeはサイズ */
+
+.bg-color1{
+    background: #f6f5f5;
+}
+
+p.bg-color1{
+    color:red;
+}
+
+
+/* ＃はid属性で使える */
+/* .ドットはclass属性に使える */
+/* p.bg-colorで指定して色付けれる */
