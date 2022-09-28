@@ -5,7 +5,7 @@
     <title>サンプルホームページ</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <script src="/jquery-3.6.1.min.js"></script>
+    
 </head>
 <body>
 
@@ -28,16 +28,21 @@
     <h1 class="title">CONTACT</h1>
     <form>
         <div class="form-group">
-            <label>内容：
-        <textarea cols="100" rows="10" name="comment" id="count-text"></textarea>
-        <!-- カウントするもの -->
-    <div class="counter-container"><span class="show-count-text">0</span>/100</div>
-    <!-- カウンターするhtml -->
-        <input type="submit" name="submit" value="送信">
-        
-        <!-- placeholderは薄文字で何を入力したらいいかわかる -->
+            <label>名前:任意<span class="help-block"></span>
+                <input type="text" name="name" class="valid-text">
             </label>
-    </div>
+        </div>
+        <div class="form-group">
+            <label>E-mail:*必須<span class="help-block"></span>
+                <input type="text" name="email" class="valid-email">
+            </label>
+        </div>
+        <div class="firm-group">
+            <label>内容*必須<span class="help-block"></span>
+                <textarea cols="100" rows="10"name="comment" class="valid-textarea"></textarea>
+            </label>
+        </div>
+        <input type="submit" name="submit" value="送信">
     </form>
 </section>
 </div>
@@ -46,5 +51,7 @@
 </footer>
 <script src="app.js"></script>
 <!-- jsを呼ぶコード -->
+<script src="/jquery-3.6.1.min.js"></script>
+<!-- jqueryを呼ぶコード -->
 </body>
 </html>
