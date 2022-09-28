@@ -1,26 +1,24 @@
+@charset "UTF-8";
 body{
-    color:#444;
-    margin:0;
-    /* pxは0 */
+    color: #444;
+    margin: 0;
     padding: 0;
     line-height: 150%;
 }
-/* トップバナー */
 
+/*トップバナー*/
 #top-baner{
     width: 100%;
 }
-/* 横幅いっぱいに表示される */
 
-/* ヘッダー */
+/*ヘッダー部分*/
 header{
-    margin-bottom:15px;
+    margin-bottom: 15px;
     height: 200px;
 }
-/* margin-bottomはしただけ指定 */
 header h1{
     font-size: 20px;
-    font-family: 'Montserrat',sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin: 15px;
     padding: 20px;
     text-align: center;
@@ -29,28 +27,23 @@ header h1{
     width: 150px;
     background: #f6f5f5;
     border-radius: 100px;
-    -webkit-border-radius:100px;
-    -moz-border-radius:100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
     line-height: 150px;
-
 }
-/* line-heightは行間 */
-
 header h1 a{
-    color:#333;
+    color: #333;
     text-decoration: none;
 }
 
-/* text-decorationはリンクの線を消す */
-
-/* ナビゲーション */
-
+/*ナビゲーション*/
 #top-nav{
     float: right;
     width: 500px;
     height: 200px;
     position: relative;
 }
+
 nav a{
     padding: 10px 15px;
     color: #444;
@@ -58,10 +51,12 @@ nav a{
     font-size: 14px;
     font-weight: bold;
 }
+
 nav a:hover{
     text-decoration: underline;
 }
-#top-nav ul{
+
+#top-nav ul {
     height: 40px;
     width: 450px;
     position: absolute;
@@ -74,118 +69,48 @@ nav a:hover{
     float: left;
 }
 
-/* floatで横並びになる */
 
+/*コンテンツ横幅*/
 .site-width{
     width: 980px;
     margin: 0 auto;
 }
-/* 中央揃えはautoにする */
+
 section h1.title{
-    font-family: 'Montserrat',sans-serif;
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
 }
 
-#about,#merit,#recruit{
-    margin-top: 80px;
-    margin-bottom: 80px;
-}
 
-/* panel */
-
-.panel{
-    background: #f6f5f5;
-    border: 1px solid #eee;
-    border-radius: 3px;
-    -webkit-border-radius:3px;
-    -moz-border-radius:3px;
-    margin: 0 15px;
-    padding: 15px;
-    width: 30%;
-    float: left;
-    box-sizing: border-box;
-    min-height: 380px;
-}
-
-/* min-heightは高さを決める */
-.panel h2{
-    color: #333;
-    text-align: center;
-}
-
-/* テーブル */
-table{
-    background: rgb(246,246,246);
-    border: 1px solid #eee;
-    width: 100%;
-    border-radius: 3px;
-    -webkit-border-radius:3px;
-    -moz-border-radius:3px;
-    padding: 10px;
-    margin: 10px 0;
-    text-align: left;
-    font-size: 14px;
-}
-th,td{
-    padding: 5px 0;
-    border-bottom: 1px dotted #ccc;
-
-}
-
-table thead tr th{
-    color:#333;
-    padding-bottom: 15px;
-}
-
-table thead tr th.color1 {
-    color:rgb(230,140,31);
-    font-size: 18px;
-
-
-}
-
-table tbody th{
-    color:rgb(142,130,113);
-}
-
-#merit{
-    overflow: hidden;
-}
-
-/* flaot を解除してくれる機能 */
-
-
-/* フッター */
-
+/*フッター*/
 footer{
-    font-size:12px;
-    margin-top: 30px;
+    font-size: 12px;
     padding: 15px;
     background: #333;
     text-align: center;
     color: #f6f5f5;
-} 
+}
+
 footer a{
     color: #f6f5f5;
-    
 }
 
-/* contact */
+/*contact*/
 #contact{
-    margin-bottom: 150px;
+    margin-bottom: 100px;
 }
 
-/* フォームの下に余白できる */
+/*フォーム*/
 form{
     width: 50%;
     margin: 0 auto;
-    font-size: 16px;
 }
 
 input,textarea{
     font-size: 18px;
     margin-bottom: 15px;
 }
+
 input[type="text"]{
     width: 100%;
     height: 60px;
@@ -193,7 +118,6 @@ input[type="text"]{
     background: #f6f5f5;
     padding: 10px;
     box-sizing: border-box;
-
 }
 
 textarea{
@@ -203,7 +127,6 @@ textarea{
     background: #f6f5f5;
     padding: 10px;
     box-sizing: border-box;
-
 }
 
 input[type="submit"]{
@@ -213,3 +136,10 @@ input[type="submit"]{
     color: white;
     float: right;
 }
+
+input:-webkit-autofill {
+-webkit-border-shadow: 0 0 0px 1000px #f6f5f5 inset;
+
+}
+
+

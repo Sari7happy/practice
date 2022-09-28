@@ -15,7 +15,7 @@
             <li><a href="main.html">HOME</a></li>
             <li><a href="#about">ABOUT</a></li>
             <li><a href="#merit">MERIT</a></li>
-            <li><a href="recruit">RECRUIT</a></li>
+            <li><a href="#recruit">RECRUIT</a></li>
             <li><a href="contact.html">CONTACT</a></li>
         </ul>
     </nav>
@@ -27,23 +27,20 @@
     <h1 class="title">CONTACT</h1>
     <form>
         <div class="form-group">
-            <label>内容：
-        <textarea cols="100" rows="10" name="comment" id="count-text"></textarea>
-        <!-- カウントするもの -->
-    <div class="counter-container"><span class="show-count-text">0</span>/100</div>
-    <!-- カウンターするhtml -->
-        <input type="submit" name="submit" value="送信">
-        
-        <!-- placeholderは薄文字で何を入力したらいいかわかる -->
+            <label>電話番号
+                <input type="text" name="phone" class="format-number">
+                <!-- labelにformの名前を書いて焦点をおく。spanタグはエラーメッセージを表示させるために用意しておく-->
             </label>
-    </div>
+        </div>
+        <input type="submit" name="submit" value="送信">
     </form>
 </section>
 </div>
 <footer>
     copyright<a href="http://webukatu.com/">ウェブカツ！！サンプルホームページ</a>.ALL Rights Reserved.
 </footer>
+<script src="http://code.jquery.com/jquery-3.6.1.min.js"></script>
+<!-- JQUERYを読み込むコードはフッタータグの下に書く最新版を入れる -->
 <script src="app.js"></script>
-<!-- jsを呼ぶコード -->
 </body>
 </html>
