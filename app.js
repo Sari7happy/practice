@@ -1,69 +1,25 @@
 $(function(){
-    // /function実行するよのサイン/ 
-    const MSG_TEXT_MAX = '20文字以内で入力してください。';
-    const MSG_EMPTY = '入力必須です。';
-    const MSG_EMIL_TYPE = 'emailの形式ではありません。';
-    const MSG_TEXTAREA_MAX = '100文字以内で入力してください。';
-    // 定数は大文字でかくエラーメッセージの内容
+    $(".format-number").change(function(){
+        // マウスが外れた時の動き
 
-// 名前エリア
-    $(".valid-text").keyup(function(){
-        // クラスがvalid-textのもの
+        var format_before =$(this).val();
+        // フォーマットに入力したら
+        format_before = format_before.replace(/-/g,'');
+    // replaceは置き換える
 
-    var form_g = $(this).closest('.form-group');
-    // thisは名前フォームを指すclosest親の名前form-groupを指す
-
-    if($(this) .val().length > 20){
-        // lengthは文字の長さ
-        form_g.removeClass('has-success').addClass('has-error');
-        // ewmoveclassは削除、addclassは追加
-        form_g.find('.help-block').text(MSG_TEXT_MAX);
-        // help-blockを探す、textを書き換えれるconstの中身を表示するMSG _TEXT _MAX
-    }else{
-        form_g.removeClass('has-error').addClass('has-success');
-        form_g.find('.help-block').text('');
-        // text('')は空になる処理
-    }
-
-});
-
-// EMAILエリア
-$(".valid-email").keyup(function(){
-
-    var form_g = $(this) .closest('.form-group');
-
-    if($(this).val().length === 0 ){
-        form_g.removeClass('has-success').addClass('has-error');
-        form_g.find('.help-block').text(MSG_EMPTY);
-
-    }else if($(this).val().length >50 || !$(this).val().match(/^([a-zA-Z0-9])+([a-zA-Z0-9\._-])*@([a-zA-Z0-9_-])+([a-zA-Z0-9\._-]+)+$/)){
-        // 正規表現はemailと検索、EMAILの表現かどうか　！はではない時
-        form_g.removeClass('has-success').addClass('has-error');
-        form_g.find('.help-block').text(MSG_EMIL_TYPE);
-
-}else{
-        form_g.removeClass('has-error').addClass('has-success');
-        form_g.find('.help-block').text('');
-    }
-});
-
-// テキストエリア
-$(".valid-textarea").keyup(function(){
-
-    var form_g = $(this).closest('.form-group');
-
-    if($(this).val().length === 0){
-        form_g.removeClass('has-success').addClass('has-error');
-        form_g.find('.help-block').text(MSG_EMPTY);
-
-}else if($(this).val().length > 100){
-    form_g.removeClass('has-success').addClass('has-error');
-    form_g.find('.help-block').text(MSG_TEXTAREA_MAX);
-
-}else{
-    form_g.removeClass('has-error').addClass('has-success');
-    form_g.find('.help-block').text('');
-    }
-});
-
+        var format_after =format_before.replace(/[A-Za-z0-9]/g,function(s){return String.fromCharCode(s.charCodeAt(0)-0xFEE0) });
+// 半角にする動き
+            if(format_after.length === 11){
+                // 11文字かどうか
+                $(this).val(format_after.substr(0,3)+'-'+format_after.substr(3,4)+'-'+format_after.substr(7,4));
+            // substrは何文字取得するか0から３文字目090-みたいな
+            }else{
+                $(this).val(format_after);
+            }
+        
+    });
+    
+    
+    
+    
 });

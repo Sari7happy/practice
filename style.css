@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body{
     color: #444;
     margin: 0;
@@ -142,22 +143,3 @@ input:-webkit-autofill {
 }
 
 
-/*バリデーション*/
-.help-block{
-    font-size:14px;
-    margin-left: 10px;
-}
-/*エラー時*/
-.has-error input, .has-error textarea{
-    border: 1px solid #ff4d4b;
-}
-.has-error .help-block, .has-error label{
-    color: #ff4d4b;
-}
-/*サクセス時*/
-.has-success input, .has-success textarea{
-    border: 1px solid #2fb4ce;
-}
-.has-success .help-block, .has-success label{
-    color: #2fb4ce;
-}
