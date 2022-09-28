@@ -10,4 +10,4 @@ node.addEventListener('keyup',function(){
     },false
 );
 
-// 大文字小文字気をつける。
+// 大文字小文字気をつける。keyupはマウスを上げたら反応する
