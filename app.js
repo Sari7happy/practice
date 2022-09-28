@@ -22,6 +22,7 @@ $(function(){
     }else{
         form_g.removeClass('has-error').addClass('has-success');
         form_g.find('.help-block').text('');
+        // text('')は空になる処理
     }
 
 });
@@ -36,6 +37,7 @@ $(".valid-email").keyup(function(){
         form_g.find('.help-block').text(MSG_EMPTY);
 
     }else if($(this).val().length >50 || !$(this).val().match(/^([a-zA-Z0-9])+([a-zA-Z0-9\._-])*@([a-zA-Z0-9_-])+([a-zA-Z0-9\._-]+)+$/)){
+        // 正規表現はemailと検索、EMAILの表現かどうか　！はではない時
         form_g.removeClass('has-success').addClass('has-error');
         form_g.find('.help-block').text(MSG_EMIL_TYPE);
 
